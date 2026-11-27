@@ -17,10 +17,10 @@ export default function Footer({ onToggleTerminal }: FooterProps) {
           <div className="flex items-center gap-2">
             <span className="font-mono text-sm font-bold text-white">{PROFILE.name}</span>
             <span className="text-slate-600">/</span>
-            <span className="font-mono text-xs text-cyan-400">DevOps & Platform Engineering</span>
+            <span className="font-mono text-xs text-cyan-400">Full-Stack & AI Engineering</span>
           </div>
           <p className="text-xs text-slate-500 font-mono">
-            Automated with Terraform • Orchestrated on Kubernetes • Keyless Workload Identity
+            Built with Next.js • Powered by GenAI • Deployed on the cloud
           </p>
         </div>
 

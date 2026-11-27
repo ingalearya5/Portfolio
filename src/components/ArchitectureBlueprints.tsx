@@ -24,7 +24,7 @@ import {
 import { GcpIcon, AwsIcon } from "@/components/Icons";
 
 export default function ArchitectureBlueprints() {
-  const [activeProject, setActiveProject] = useState<string>("retail-data-platform");
+  const [activeProject, setActiveProject] = useState<string>("ai-notes-platform");
   const [selectedNodeId, setSelectedNodeId] = useState<string>("gke");
   const [migrationView, setMigrationView] = useState<"before" | "after">("after");
   const [codeTab, setCodeTab] = useState<"terraform" | "helm" | "slo">("terraform");
@@ -111,17 +111,29 @@ alertPolicies:
       <div className="flex flex-col gap-4 mb-10">
         <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/30 px-3 py-1 text-xs font-mono text-cyan-300 w-fit">
           <Workflow className="h-3.5 w-3.5" />
-          <span>PRODUCTION SYSTEM BLUEPRINTS</span>
+          <span>FEATURED PROJECTS & ARCHITECTURE</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Architecture Blueprints
+          Projects & Architecture
         </h2>
         <p className="text-slate-400 max-w-2xl text-sm sm:text-base">
-          Deep dive into real cloud architectures I have engineered. Inspect IaC definitions, container orchestration models, and security governance policies.
+          Deep dives into the full-stack, GenAI and cloud systems I have built, from RAG pipelines and web apps to the infrastructure that deploys them.
         </p>
 
         {/* Project Selector Tabs */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 mt-4 border-b border-slate-800 pb-4">
+          <button
+            onClick={() => setActiveProject("ai-notes-platform")}
+            className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all ${
+              activeProject === "ai-notes-platform"
+                ? "bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20"
+                : "border border-slate-800 bg-slate-900/60 text-slate-300 hover:border-slate-700"
+            }`}
+          >
+            <Sparkles className="h-4 w-4 text-amber-400" />
+            <span>Full-Stack AI SaaS (Next.js + Gemini)</span>
+          </button>
+
           <button
             onClick={() => setActiveProject("retail-data-platform")}
             className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all ${
@@ -146,17 +158,6 @@ alertPolicies:
             <span>AWS Microservices Re-Architecture (EKS → ECS)</span>
           </button>
 
-          <button
-            onClick={() => setActiveProject("ai-notes-platform")}
-            className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all ${
-              activeProject === "ai-notes-platform"
-                ? "bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/20"
-                : "border border-slate-800 bg-slate-900/60 text-slate-300 hover:border-slate-700"
-            }`}
-          >
-            <Sparkles className="h-4 w-4 text-amber-400" />
-            <span>Full-Stack AI SaaS (Next.js + Gemini)</span>
-          </button>
         </div>
       </div>
 

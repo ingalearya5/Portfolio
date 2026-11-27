@@ -8,10 +8,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Arya Ingale | Cloud & DevOps Platform Engineer",
-  description: "Portfolio of Arya Ingale – Platform Engineer specializing in Kubernetes (GKE/ECS), Terraform IaC, Google Cloud (ACE Certified), AWS, and automated GitOps CI/CD Pipelines.",
+  title: "Arya Ingale | Full-Stack & AI Engineer",
+  description: "Portfolio of Arya Ingale – Full-Stack & AI Engineer building GenAI products with Next.js, React, FastAPI, LangChain and Gemini, deployed on GCP & AWS (Google Cloud ACE Certified).",
   keywords: [
-    "DevOps",
+    "Full-Stack Engineer", "AI Engineer", "Generative AI", "LLM", "RAG", "Next.js", "React", "FastAPI", "DevOps",
     "Platform Engineer",
     "Cloud Engineer",
     "Terraform",
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://github.com/ingalearya5",
-    title: "Arya Ingale | Cloud & DevOps Platform Engineer",
-    description: "Cloud & Platform Engineer specializing in Kubernetes (GKE/ECS), Terraform IaC, Google Cloud (ACE Certified), and GitOps CI/CD Pipelines.",
+    title: "Arya Ingale | Full-Stack & AI Engineer",
+    description: "Full-Stack & AI Engineer building GenAI apps with Next.js, FastAPI, LangChain and Gemini, deployed on GCP & AWS.",
     siteName: "Arya Ingale Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arya Ingale | Cloud & DevOps Platform Engineer",
-    description: "Cloud & Platform Engineer specializing in Kubernetes, Terraform IaC, GCP (ACE), and automated CI/CD.",
+    title: "Arya Ingale | Full-Stack & AI Engineer",
+    description: "Full-Stack & AI Engineer: Next.js, FastAPI, LangChain, Gemini, GCP & AWS.",
   },
   icons: {
     icon: "/icon.svg",

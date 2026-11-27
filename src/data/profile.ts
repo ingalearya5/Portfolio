@@ -55,8 +55,8 @@ export interface CertificationItem {
 
 export const PROFILE = {
   name: "Arya Ingale",
-  title: "Cloud & Platform Engineer | DevOps",
-  subtitle: "Specializing in Infrastructure as Code (Terraform), Kubernetes (GKE/EKS), Serverless Architectures, and Automated GitOps CI/CD Pipelines.",
+  title: "Full-Stack & AI Engineer | Cloud",
+  subtitle: "Building full-stack and GenAI applications (Next.js, FastAPI, LangChain, Gemini) and deploying them on GCP and AWS with Terraform and CI/CD.",
   location: "Mumbai, India",
   region: "ap-south-1 (Mumbai)",
   email: "aryaamol21@gmail.com",
@@ -67,12 +67,12 @@ export const PROFILE = {
   },
   availability: {
     status: "Open to Opportunities",
-    openToRoles: ["DevOps Engineer", "Cloud Engineer", "Platform Engineer", "Site Reliability Engineer"],
+    openToRoles: ["Full-Stack Engineer", "AI / GenAI Engineer", "Software Engineer", "Cloud / DevOps Engineer"],
   },
   metrics: [
-    { label: "Terraform Resources Provisioned", value: "49+", detail: "Zero manual steps via automated apply" },
-    { label: "Cloud Platforms", value: "GCP & AWS", detail: "GKE, ECS, EKS, Lambda, BigQuery" },
-    { label: "Security & Observability", value: "100% Code", detail: "Workload Identity, DLP, SLO Burn-rates" },
+    { label: "GenAI Stack", value: "RAG + LLMs", detail: "LangChain, Gemini API, Claude API, vector search" },
+    { label: "Full-Stack Apps", value: "Next.js + FastAPI", detail: "React, TypeScript, Node.js, Python, SQL" },
+    { label: "Cloud & IaC", value: "GCP & AWS", detail: "49 Terraform resources, ECS, Lambda, GKE, CI/CD" },
     { label: "CGPA", value: "8.4 / 10", detail: "D. J. Sanghvi College of Engineering" },
   ],
   education: {
@@ -219,7 +219,7 @@ export const PROFILE = {
       title: "AI-Powered Note Taking SaaS Platform",
       tagline: "Full-stack real-time platform with Gemini API, LangChain semantic search, and PDF Q&A",
       category: "fullstack-ai",
-      featured: false,
+      featured: true,
       technologies: ["Next.js", "LangChain", "Gemini API", "Clerk Auth", "Convex DB", "TypeScript", "Tailwind CSS"],
       metrics: [
         { label: "AI Engine", value: "Gemini API" },
@@ -234,6 +234,44 @@ export const PROFILE = {
     }
   ] as ProjectItem[],
   skillCategories: [
+    {
+      category: "Languages & Frameworks",
+      description: "Software engineering and service development",
+      skills: [
+        { name: "Python", level: "advanced", highlight: true },
+        { name: "FastAPI", level: "advanced", highlight: true },
+        { name: "Node.js & Express", level: "advanced" },
+        { name: "TypeScript & JavaScript", level: "advanced" },
+        { name: "React.js & Next.js", level: "advanced" },
+        { name: "SQL", level: "advanced" },
+        { name: "PHP", level: "proficient" },
+        { name: "Java", level: "proficient" },
+      ]
+    },
+    {
+      category: "GenAI & LLM Tooling",
+      description: "LLM apps, RAG and AI developer tooling",
+      skills: [
+        { name: "Gemini API", level: "advanced", highlight: true },
+        { name: "LangChain", level: "advanced" },
+        { name: "Claude API", level: "advanced" },
+        { name: "HuggingFace", level: "proficient" },
+        { name: "GitHub Copilot", level: "advanced" },
+        { name: "Prompt Engineering", level: "advanced" },
+      ]
+    },
+    {
+      category: "Databases & Storage",
+      description: "Relational, analytical, and vector stores",
+      skills: [
+        { name: "BigQuery", level: "advanced" },
+        { name: "MySQL / Cloud SQL", level: "advanced" },
+        { name: "MongoDB", level: "proficient" },
+        { name: "DynamoDB", level: "proficient" },
+        { name: "PineconeDB (Vector)", level: "proficient" },
+        { name: "Convex DB", level: "proficient" },
+      ]
+    },
     {
       category: "Cloud Platforms",
       description: "Production infrastructure on GCP & AWS",
@@ -274,44 +312,6 @@ export const PROFILE = {
         { name: "Cloud DLP (PII Scans)", level: "proficient" },
         { name: "Least-Privilege IAM", level: "advanced" },
         { name: "Load Testing", level: "proficient" },
-      ]
-    },
-    {
-      category: "Languages & Frameworks",
-      description: "Software engineering and service development",
-      skills: [
-        { name: "Python", level: "advanced", highlight: true },
-        { name: "FastAPI", level: "advanced", highlight: true },
-        { name: "Node.js & Express", level: "advanced" },
-        { name: "TypeScript & JavaScript", level: "advanced" },
-        { name: "React.js & Next.js", level: "advanced" },
-        { name: "SQL", level: "advanced" },
-        { name: "PHP", level: "proficient" },
-        { name: "Java", level: "proficient" },
-      ]
-    },
-    {
-      category: "Databases & Storage",
-      description: "Relational, analytical, and vector stores",
-      skills: [
-        { name: "BigQuery", level: "advanced" },
-        { name: "MySQL / Cloud SQL", level: "advanced" },
-        { name: "MongoDB", level: "proficient" },
-        { name: "DynamoDB", level: "proficient" },
-        { name: "PineconeDB (Vector)", level: "proficient" },
-        { name: "Convex DB", level: "proficient" },
-      ]
-    },
-    {
-      category: "AI & Platform Tooling",
-      description: "GenAI integrations and developer tooling",
-      skills: [
-        { name: "Gemini API", level: "advanced", highlight: true },
-        { name: "LangChain", level: "advanced" },
-        { name: "Claude API", level: "advanced" },
-        { name: "HuggingFace", level: "proficient" },
-        { name: "GitHub Copilot", level: "advanced" },
-        { name: "Prompt Engineering", level: "advanced" },
       ]
     }
   ] as SkillCategory[],

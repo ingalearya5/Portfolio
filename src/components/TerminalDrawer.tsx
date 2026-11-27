@@ -65,7 +65,7 @@ export default function TerminalDrawer({ isOpen, onClose }: TerminalDrawerProps)
         <div className="space-y-1 text-slate-300">
           <p className="text-cyan-400 font-semibold mb-1">Available Commands:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs">
-            <p><span className="text-emerald-400 font-mono">arya-ctl get skills</span> - Display cloud & DevOps skills</p>
+            <p><span className="text-emerald-400 font-mono">arya-ctl get skills</span> - Display full-stack, AI & cloud skills</p>
             <p><span className="text-emerald-400 font-mono">arya-ctl get certs</span> - Show Google Cloud ACE & Claude certs</p>
             <p><span className="text-emerald-400 font-mono">arya-ctl get exp</span> - View production workloads</p>
             <p><span className="text-emerald-400 font-mono">arya-ctl get projects</span> - List system architecture blueprints</p>
@@ -79,7 +79,7 @@ export default function TerminalDrawer({ isOpen, onClose }: TerminalDrawerProps)
     } else if (lower === "skills" || lower === "arya-ctl get skills" || lower === "get skills") {
       output = (
         <div className="space-y-2 text-xs">
-          <p className="text-cyan-400 font-semibold">Cloud & DevOps Technology Stack:</p>
+          <p className="text-cyan-400 font-semibold">Full-Stack, AI & Cloud Technology Stack:</p>
           <div className="space-y-1 text-slate-300">
             <p>• <strong className="text-white">Cloud:</strong> GCP (GKE, BigQuery, IAM, Cloud Armor), AWS (ECS, EKS, Lambda, CloudWatch)</p>
             <p>• <strong className="text-white">IaC & Orchestration:</strong> Terraform (49+ resources), Kubernetes, Helm, Docker</p>
@@ -131,7 +131,7 @@ export default function TerminalDrawer({ isOpen, onClose }: TerminalDrawerProps)
           <div className="rounded bg-black/60 p-3 border border-slate-800 text-slate-300 space-y-0.5">
             <p className="text-emerald-400 font-bold">+ resource &quot;candidate_placement&quot; &quot;arya_ingale&quot; &#123;</p>
             <p className="pl-4">+ candidate      = &quot;Arya Ingale&quot;</p>
-            <p className="pl-4">+ target_roles   = [&quot;DevOps Engineer&quot;, &quot;Platform Engineer&quot;, &quot;Cloud Engineer&quot;]</p>
+            <p className="pl-4">+ target_roles   = [&quot;Full-Stack Engineer&quot;, &quot;AI/GenAI Engineer&quot;, &quot;Cloud/DevOps Engineer&quot;]</p>
             <p className="pl-4">+ primary_cloud  = [&quot;Google Cloud (ACE Certified)&quot;, &quot;AWS&quot;]</p>
             <p className="pl-4">+ orchestration  = [&quot;Terraform&quot;, &quot;Kubernetes (GKE/ECS)&quot;, &quot;Helm&quot;, &quot;Docker&quot;]</p>
             <p className="pl-4">+ education      = &quot;B.Tech in IT - CGPA: 8.4/10 (DJSCE)&quot;</p>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -24,10 +24,10 @@ export default function Navbar({ onToggleTerminal }: NavbarProps) {
 
   const navLinks = [
     { name: "Overview", href: "#overview" },
-    { name: "Architecture", href: "#architecture" },
-    { name: "Workloads", href: "#workloads" },
+    { name: "Projects", href: "#architecture" },
+    { name: "Experience", href: "#workloads" },
     { name: "Certifications", href: "#certifications" },
-    { name: "Service Catalog", href: "#skills" },
+    { name: "Skills", href: "#skills" },
   ];
 
   return (

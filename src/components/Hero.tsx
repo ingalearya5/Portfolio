@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/30 px-3 py-1 text-xs font-mono text-cyan-300 shadow-sm shadow-cyan-500/10 mb-6">
             <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-            <span>CLOUD & PLATFORM ENGINEERING</span>
+            <span>FULL-STACK • AI • CLOUD</span>
             <span className="text-slate-600">/</span>
             <span className="text-slate-400">GCP ACE CERTIFIED</span>
           </div>
@@ -42,37 +42,46 @@ export default function Hero() {
             </span>
           </h1>
           <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-200">
-            Cloud, DevOps &amp; Platform Engineer
+            Full-Stack &amp; AI Engineer
           </h2>
 
           {/* Headline */}
           <p className="mt-5 text-lg sm:text-xl font-medium text-slate-300 leading-snug">
-            Engineering{" "}
-            <span className="text-cyan-300">resilient cloud platforms</span>{" "}
-            &amp; automated infrastructure.
+            Building{" "}
+            <span className="text-cyan-300">AI-powered web products</span>{" "}
+            &amp; the cloud infrastructure that runs them.
           </p>
 
           {/* Subtitle / Bio */}
           <p className="mt-4 text-base sm:text-lg text-slate-400 leading-relaxed">
-            I design and automate production cloud environments using{" "}
-            <span className="text-cyan-300 font-medium">Terraform</span>, orchestrate workloads with{" "}
-            <span className="text-sky-300 font-medium">Kubernetes (GKE/ECS)</span>, and ship zero-friction{" "}
-            <span className="text-indigo-300 font-medium">CI/CD pipelines</span> backed by proactive SLO observability.
+            I build end-to-end applications with{" "}
+            <span className="text-cyan-300 font-medium">Next.js, React &amp; TypeScript</span>, backends in{" "}
+            <span className="text-sky-300 font-medium">Python (FastAPI) &amp; Node.js</span>, and GenAI features with{" "}
+            <span className="text-indigo-300 font-medium">LangChain, Gemini &amp; RAG</span> — then ship them on{" "}
+            <span className="text-purple-300 font-medium">GCP &amp; AWS</span> with Terraform and CI/CD.
           </p>
 
-          {/* Cloud Platform Pills */}
+          {/* Stack Pills */}
           <div className="mt-6 flex flex-wrap items-center gap-2">
             <div className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-300">
+              <Layers className="h-3.5 w-3.5 text-cyan-400" />
+              <span>Next.js • React • TypeScript</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-300">
+              <Cpu className="h-3.5 w-3.5 text-amber-400" />
+              <span>LangChain • Gemini • Claude API</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-300">
               <GcpIcon className="h-3.5 w-3.5 text-blue-400" />
-              <span>Google Cloud (GKE, BigQuery, IAM)</span>
+              <span>GCP</span>
             </div>
             <div className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-300">
               <AwsIcon className="h-3.5 w-3.5 text-amber-400" />
-              <span>AWS (ECS, Lambda, CloudWatch)</span>
+              <span>AWS</span>
             </div>
             <div className="flex items-center gap-1.5 rounded-lg border border-slate-800 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-300">
               <FileCode className="h-3.5 w-3.5 text-purple-400" />
-              <span>Terraform (IaC)</span>
+              <span>Terraform</span>
             </div>
           </div>
 
@@ -82,7 +91,7 @@ export default function Hero() {
               href="#architecture"
               className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 hover:brightness-110 transition-all group"
             >
-              <span>Explore Architecture Blueprints</span>
+              <span>Explore Projects &amp; Architecture</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
 
@@ -91,7 +100,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-xl border border-slate-700/80 bg-slate-900/80 px-5 py-3 text-sm font-semibold text-slate-200 hover:border-slate-500 hover:bg-slate-800 transition-all"
             >
               <Server className="h-4 w-4 text-slate-400" />
-              <span>Production Workloads</span>
+              <span>Experience</span>
             </a>
 
             <a
@@ -114,10 +123,10 @@ export default function Hero() {
                   <span className="h-3 w-3 rounded-full bg-amber-500/80" />
                   <span className="h-3 w-3 rounded-full bg-emerald-500/80" />
                 </div>
-                <span className="hidden sm:inline font-mono text-xs text-slate-400 ml-2">control-plane.arya.io</span>
+                <span className="hidden sm:inline font-mono text-xs text-slate-400 ml-2">stack.arya.dev</span>
               </div>
               <span className="rounded bg-emerald-500/10 px-2 py-0.5 text-[11px] font-mono text-emerald-400 border border-emerald-500/20 flex items-center gap-1">
-                <Activity className="h-3 w-3 animate-pulse" /> LIVE TELEMETRY
+                <Activity className="h-3 w-3 animate-pulse" /> LIVE STACK
               </span>
             </div>
 
@@ -126,52 +135,52 @@ export default function Hero() {
               {/* Card 1: IaC */}
               <div className="rounded-xl border border-slate-800/90 bg-slate-900/60 p-3.5 hover:border-purple-500/40 transition-colors">
                 <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
-                  <span className="font-mono">IaC Automation</span>
+                  <span className="font-mono">Frontend</span>
                   <FileCode className="h-3.5 w-3.5 text-purple-400" />
                 </div>
-                <div className="text-2xl font-bold font-mono text-white">49</div>
+                <div className="text-xl font-bold font-mono text-white">Next.js</div>
                 <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
                   <CheckCircle2 className="h-3 w-3 text-emerald-400 inline" />
-                  <span>Resources via Terraform</span>
+                  <span>React • TypeScript • Tailwind</span>
                 </div>
               </div>
 
               {/* Card 2: Compute */}
               <div className="rounded-xl border border-slate-800/90 bg-slate-900/60 p-3.5 hover:border-cyan-500/40 transition-colors">
                 <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
-                  <span className="font-mono">Orchestration</span>
+                  <span className="font-mono">Backend</span>
                   <Cpu className="h-3.5 w-3.5 text-cyan-400" />
                 </div>
-                <div className="text-xl font-bold font-mono text-white">GKE & ECS</div>
+                <div className="text-xl font-bold font-mono text-white">FastAPI</div>
                 <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
                   <CheckCircle2 className="h-3 w-3 text-emerald-400 inline" />
-                  <span>Private Pools & Tasks</span>
+                  <span>Python • Node.js • REST</span>
                 </div>
               </div>
 
               {/* Card 3: Security */}
               <div className="rounded-xl border border-slate-800/90 bg-slate-900/60 p-3.5 hover:border-blue-500/40 transition-colors">
                 <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
-                  <span className="font-mono">Security Posture</span>
+                  <span className="font-mono">GenAI</span>
                   <ShieldCheck className="h-3.5 w-3.5 text-blue-400" />
                 </div>
-                <div className="text-xl font-bold font-mono text-emerald-400">Keyless</div>
+                <div className="text-xl font-bold font-mono text-emerald-400">RAG</div>
                 <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
                   <CheckCircle2 className="h-3 w-3 text-emerald-400 inline" />
-                  <span>Workload Identity IAM</span>
+                  <span>LangChain • Gemini • Claude</span>
                 </div>
               </div>
 
               {/* Card 4: Observability */}
               <div className="rounded-xl border border-slate-800/90 bg-slate-900/60 p-3.5 hover:border-amber-500/40 transition-colors">
                 <div className="flex items-center justify-between text-xs text-slate-400 mb-1">
-                  <span className="font-mono">SLO Observability</span>
+                  <span className="font-mono">Cloud & IaC</span>
                   <Activity className="h-3.5 w-3.5 text-amber-400" />
                 </div>
-                <div className="text-xl font-bold font-mono text-white">99.9%</div>
+                <div className="text-xl font-bold font-mono text-white">49</div>
                 <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
                   <CheckCircle2 className="h-3 w-3 text-emerald-400 inline" />
-                  <span>Burn-rate alerts enabled</span>
+                  <span>Terraform resources, 0 manual</span>
                 </div>
               </div>
             </div>
@@ -180,11 +189,11 @@ export default function Hero() {
             <div className="mt-4 rounded-xl border border-slate-800 bg-black/60 p-3 font-mono text-[11px] text-slate-400 space-y-1">
               <div className="flex items-center gap-2 text-cyan-400">
                 <Terminal className="h-3 w-3" />
-                <span>k8s cluster state: synced</span>
+                <span>app status: all services healthy</span>
               </div>
-              <p className="text-slate-500">&gt; terraform: 0 drift detected (GCP us-central1)</p>
-              <p className="text-slate-500">&gt; ecs service: health check 200 OK (AWS ap-south-1)</p>
-              <p className="text-emerald-400/90">&gt; candidate verification: GCP ACE credential verified</p>
+              <p className="text-slate-500">&gt; nextjs: build passing, deployed</p>
+              <p className="text-slate-500">&gt; rag-pipeline: semantic search + PDF Q&A ready</p>
+              <p className="text-emerald-400/90">&gt; certs: GCP ACE + Claude Developer verified</p>
             </div>
           </div>
         </div>
